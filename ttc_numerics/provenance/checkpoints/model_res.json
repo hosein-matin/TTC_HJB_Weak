@@ -1,0 +1,1 @@
+{"params": 323201, "width": 400, "depth": 3, "epochs": 100, "batch": 4096, "lr": 0.001, "lam_s": 1.0, "h": 0.05, "n_train": 1000000, "n_boundary": 44959}

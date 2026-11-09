@@ -1,0 +1,13 @@
+{
+  "s": 0.2,
+  "zeta": 0.6,
+  "n_slice_D": 3160,
+  "maximum_error_full": 0.4522923111915589,
+  "maximum_error_D": 0.009432506367851035,
+  "construction_slice": {
+    "s": 0.2,
+    "zeta": 0.4,
+    "mesh": 0.01,
+    "maximum_error": 2.0199194313480495e-05
+  }
+}

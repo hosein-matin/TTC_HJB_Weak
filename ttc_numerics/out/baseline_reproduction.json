@@ -1,0 +1,45 @@
+{
+  "n_test": 300000,
+  "n_D": 2627,
+  "n_hit": 13638,
+  "archived_n_D": 2627,
+  "model_metrics": {
+    "mse": {
+      "params": 323201,
+      "relu_units": 1200,
+      "linf_all": 0.7568055714052074,
+      "rmse_all": 0.006969188605933168,
+      "linf_D": 0.010017580603831816,
+      "rmse_D": 0.002256706875372607,
+      "linf_DD": 0.7568055714052074
+    },
+    "res": {
+      "params": 323201,
+      "relu_units": 1200,
+      "linf_all": 0.8788764991083494,
+      "rmse_all": 0.006640190205897451,
+      "linf_D": 0.010015922333276084,
+      "rmse_D": 0.0022196986321009857,
+      "linf_DD": 0.8788764991083494
+    }
+  },
+  "difference_from_supplied_results": {
+    "mse": {
+      "linf_all": -2.5033950805664062e-06,
+      "rmse_all": 3.4968239432525694e-09,
+      "linf_D": -1.0430812830142244e-07,
+      "rmse_D": -1.91931288614014e-09,
+      "linf_DD": -2.5033950805664062e-06
+    },
+    "res": {
+      "linf_all": -1.1920928955078125e-07,
+      "rmse_all": -5.566351346866782e-10,
+      "linf_D": -5.960464466436832e-08,
+      "rmse_D": -1.2654779390185167e-09,
+      "linf_DD": -1.1920928955078125e-07
+    }
+  },
+  "max_absolute_metric_difference": 2.5033950805664062e-06,
+  "note": "Supplied weights evaluated with NumPy float32 BLAS, corrected solver on original rounded test coordinates.",
+  "elapsed_seconds": 33.8534882068634
+}

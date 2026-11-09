@@ -1,0 +1,200 @@
+{
+  "n_test": 300000,
+  "n_test_D": 2725,
+  "frac_hit_test": 0.0451,
+  "frac_D_test": 0.009083333333333334,
+  "frac_DD_test": 0.0451,
+  "seed": 20261103,
+  "initial_times": "continuous/unrounded",
+  "dt": 0.001,
+  "nbis": 40,
+  "D_margins": {
+    "vmin": 0.1,
+    "gamma": 0.5,
+    "gamma_t": 0.2
+  },
+  "checkpoint_provenance": "Supplied 100-epoch runs; 1e6 training and 1e5 validation states with initial times rounded to 1e-3; no retraining in revised evaluation.",
+  "sampling": "independent uniforms in (s,Xi,vF,zeta_L); Lambda=zeta_L-vF",
+  "sampling_box": {
+    "s": [
+      0.0,
+      1.0
+    ],
+    "Xi": [
+      0.0,
+      1.0
+    ],
+    "vF": [
+      0.0,
+      1.9280551601516338
+    ],
+    "zeta": [
+      0.25,
+      1.75
+    ],
+    "Lam": [
+      -1.6780551601516338,
+      1.75
+    ]
+  },
+  "certified_uniform": false,
+  "mse": {
+    "params": 323201,
+    "relu_units": 1200,
+    "linf_all": 0.8881085953052975,
+    "rmse_all": 0.006565293465717004,
+    "linf_D": 0.009241366173864729,
+    "rmse_D": 0.002288527824496056,
+    "linf_DD": 0.8881085953052975,
+    "cert": {
+      "0.025": {
+        "delta": 0.016839885711669944,
+        "delta_D": 0.01251134872436524,
+        "b_sample": 0.003318086266517639,
+        "bound_max": 0.3401158004999165,
+        "err_max": 0.009241366173864729,
+        "frac_ok": 1.0,
+        "ratio_max": 0.09805352575594603,
+        "n_chain": 22054,
+        "path_sum_bound_max": 0.08838719187579044,
+        "max_algebraic_telescoping_defect": 7.450580597617718e-08,
+        "certified_uniform": false
+      },
+      "0.05": {
+        "delta": 0.017120254039764415,
+        "delta_D": 0.012480187416076649,
+        "b_sample": 0.003318086266517639,
+        "bound_max": 0.1745206266641618,
+        "err_max": 0.009241366173864729,
+        "frac_ok": 1.0,
+        "ratio_max": 0.15694187327111642,
+        "n_chain": 11780,
+        "path_sum_bound_max": 0.07399661454762384,
+        "max_algebraic_telescoping_defect": 7.450580596923828e-08,
+        "certified_uniform": false
+      },
+      "0.1": {
+        "delta": 0.024450665712356573,
+        "delta_D": 0.016170316934585593,
+        "b_sample": 0.003318086266517639,
+        "bound_max": 0.1255714148283005,
+        "err_max": 0.009241366173864729,
+        "frac_ok": 1.0,
+        "ratio_max": 0.17697183504626926,
+        "n_chain": 6731,
+        "path_sum_bound_max": 0.055849199859247994,
+        "max_algebraic_telescoping_defect": 7.450580596923828e-08,
+        "certified_uniform": false
+      },
+      "0.2": {
+        "delta": 0.02810705155134202,
+        "delta_D": 0.02523781657218932,
+        "b_sample": 0.003318086266517639,
+        "bound_max": 0.0876392409205437,
+        "err_max": 0.009241366173864729,
+        "frac_ok": 1.0,
+        "ratio_max": 0.2940755972949986,
+        "n_chain": 3733,
+        "path_sum_bound_max": 0.05584919985924797,
+        "max_algebraic_telescoping_defect": 7.450580596923828e-08,
+        "certified_uniform": false
+      }
+    },
+    "b": 0.003318086266517639
+  },
+  "res": {
+    "params": 323201,
+    "relu_units": 1200,
+    "linf_all": 0.9333088836010434,
+    "rmse_all": 0.006127829066054545,
+    "linf_D": 0.013528293550932657,
+    "rmse_D": 0.002205640450634552,
+    "linf_DD": 0.9333088836010434,
+    "cert": {
+      "0.025": {
+        "delta": 0.018119311332702615,
+        "delta_D": 0.018119311332702615,
+        "b_sample": 0.0028703799471259117,
+        "bound_max": 0.3652566066011782,
+        "err_max": 0.013528293550932657,
+        "frac_ok": 1.0,
+        "ratio_max": 0.0815382127760852,
+        "n_chain": 22054,
+        "path_sum_bound_max": 0.0703252102889898,
+        "max_algebraic_telescoping_defect": 6.705522544864229e-08,
+        "certified_uniform": false
+      },
+      "0.05": {
+        "delta": 0.01699571385979652,
+        "delta_D": 0.016165721416473378,
+        "b_sample": 0.0028703799471259117,
+        "bound_max": 0.17282751854509112,
+        "err_max": 0.013528293550932657,
+        "frac_ok": 1.0,
+        "ratio_max": 0.1415053412945315,
+        "n_chain": 11780,
+        "path_sum_bound_max": 0.06183287258209837,
+        "max_algebraic_telescoping_defect": 6.705522534455888e-08,
+        "certified_uniform": false
+      },
+      "0.1": {
+        "delta": 0.021026661992073065,
+        "delta_D": 0.01951243877410891,
+        "b_sample": 0.0028703799471259117,
+        "bound_max": 0.10800368990749123,
+        "err_max": 0.013528293550932657,
+        "frac_ok": 1.0,
+        "ratio_max": 0.18895905324099227,
+        "n_chain": 6731,
+        "path_sum_bound_max": 0.04409531260790481,
+        "max_algebraic_telescoping_defect": 6.705522537231445e-08,
+        "certified_uniform": false
+      },
+      "0.2": {
+        "delta": 0.023139330744743336,
+        "delta_D": 0.023139330744743336,
+        "b_sample": 0.0028703799471259117,
+        "bound_max": 0.07228837218135592,
+        "err_max": 0.013528293550932657,
+        "frac_ok": 1.0,
+        "ratio_max": 0.32636812702362833,
+        "n_chain": 3733,
+        "path_sum_bound_max": 0.04409531260790478,
+        "max_algebraic_telescoping_defect": 6.705522537231445e-08,
+        "certified_uniform": false
+      }
+    },
+    "b": 0.0028703799471259117
+  },
+  "env_lambda": {
+    "0.5": {
+      "T_res_max": 0.0,
+      "S_res_max": 0.025,
+      "err_max": 0.2431911164320512
+    },
+    "0.9": {
+      "T_res_max": 0.0,
+      "S_res_max": 0.004999999999999999,
+      "err_max": 0.04863822328641023
+    },
+    "1.0": {
+      "T_res_max": 0.0,
+      "S_res_max": 0.0,
+      "err_max": 0.0
+    },
+    "1.1": {
+      "T_res_max": 0.0050000000000000044,
+      "S_res_max": 0.0050000000000000044,
+      "err_max": 0.048638223286410286
+    }
+  },
+  "V_D_range": [
+    0.10002889545567228,
+    0.4863822328641024
+  ],
+  "elapsed_seconds": 35.149388551712036,
+  "checkpoint_sha256": {
+    "mse": "06d22f6635936ce3e1bdd0dbc9eb041af11c98bf165552893c6e0ef96b9ec933",
+    "res": "b47d4022f2af9cfe5fe2f9126e9184e5f015a8d8190c6b2f4785b768afcf7e11"
+  }
+}

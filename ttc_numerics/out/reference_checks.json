@@ -1,0 +1,31 @@
+{
+  "method": "piecewise constant RK4, dt<=1e-3, 40 bisections; independent DOP853 split at jumps",
+  "rigorous_enclosure": false,
+  "n_random_screen": 2500,
+  "n_comparison": 120,
+  "n_selected_D": 28,
+  "classification_agreement": 120,
+  "n_classification_mismatch": 0,
+  "max_abs_TTC_vs_DOP853": 6.561418075534675e-14,
+  "max_abs_TTC_dt1e3_vs_dt5e4": 7.560618797697316e-14,
+  "max_abs_TTC_dt5e4_vs_dt25e5": 4.596323321948148e-14,
+  "max_snapshot_component_difference_dt1e3_vs_dt25e5": 1.2512213487525514e-13,
+  "max_semigroup_TTC_defect": 5.551115123125783e-17,
+  "target_stops_immediately": true,
+  "terminal_stops_immediately": true,
+  "arbitrary_start_times_preserved": true,
+  "within_step_minimum_case": {
+    "s": 0.4,
+    "y": [
+      1e-08,
+      -0.0003,
+      0.5
+    ],
+    "RK4_V": 3.7568967840462264e-05,
+    "RK4_hit": true,
+    "DOP853_V": 3.7568967840462264e-05,
+    "DOP853_hit": true,
+    "DOP853_max_step": 1e-06
+  },
+  "caveat": "Finite numerical checks do not certify classification at grazing or a uniform flow/event error."
+}

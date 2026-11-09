@@ -1,0 +1,361 @@
+{
+  "geometry": {
+    "impact_speed_lower_bound": 0.3,
+    "maximum_contact_time": 0.2184641887819747,
+    "minimum_contact_time": 0.03571428571428572,
+    "integrated_closing_lower_bound": 0.14658154101290938,
+    "leader_speed_bounds": [
+      0.03,
+      0.76
+    ],
+    "closing_speed_upper_bound": 1.4,
+    "optimal_velocity_lipschitz_on_precontact_gaps": 0.08894480607878208,
+    "leader_acceleration_absolute_bound": 1.2,
+    "filter_coefficient": 0.17699115044247787,
+    "volterra_denominator": 0.9957549666598638,
+    "analytical_ttc_lipschitz": 3.828441530908998,
+    "construction_box_lo": [
+      0.15,
+      0.05,
+      -1.4,
+      0.27
+    ],
+    "construction_box_hi": [
+      0.27,
+      0.12,
+      -1.1,
+      0.52
+    ],
+    "initial_box_lo": [
+      0.15,
+      0.08,
+      -1.4,
+      0.3
+    ],
+    "initial_box_hi": [
+      0.25,
+      0.12,
+      -1.2,
+      0.5
+    ],
+    "stopped_step": 0.02
+  },
+  "query_protocol": "independent uniform queries after fixing the complete grid; no support selection",
+  "reference_protocol": "RK4 dt<=1e-3, all forcing jumps and stops split, 40 event bisections; independent sampled DOP853 checks",
+  "certificate_scope": "analytical exact-node interpolation/realization bounds; floating-point reference errors are empirically checked, not uniformly certified",
+  "seeds": {
+    "box": 202611031,
+    "initial": 202611032,
+    "tube": 202611033,
+    "perturbation": 202611034,
+    "validation": 202611035
+  },
+  "n_test_per_box": 10000,
+  "meshes": {
+    "0.02": {
+      "h0": 0.02,
+      "actual_mesh": [
+        0.020000000000000004,
+        0.017499999999999998,
+        0.019999999999999987,
+        0.019230769230769232
+      ],
+      "nseg": [
+        6,
+        4,
+        15,
+        13
+      ],
+      "n_nodes": 7840,
+      "n_cells": 4680,
+      "coefficient_sha256": "49bf70f14e24e8a0b0a7031f2bc506aeee1f002aa5b3dd3017947363914fea26",
+      "nodal_coefficient_bytes": 62720,
+      "build": {
+        "source": "new complete-grid numerical TTC coefficients",
+        "seconds": 0.28020829200067965,
+        "observed_impact_velocity_min": -1.3259731872515772,
+        "observed_impact_velocity_max": -0.7996867535032267
+      },
+      "realization": {
+        "square_layers": 6,
+        "square_error_bound": 6.103515625e-05,
+        "product_error_bound": 0.00018310546875,
+        "relu_units_per_multiplier": 40,
+        "relu_units_per_node": 132,
+        "literal_relu_units": 1034880,
+        "literal_hidden_depth": 26,
+        "gate_count_convention": "unshared ReLU DAG with affine skip connections",
+        "strictly_layered_relu_units_per_node": 189,
+        "strictly_layered_relu_units": 1481760,
+        "nodal_coefficients": 7840,
+        "coefficient_bound": 0.2184641887819747,
+        "realization_error_bound": 0.0006400318030721915,
+        "nodal_error_amplification": 1.0029296875,
+        "evaluation": "support-aware evaluation of explicit zero-preserving ReLU blocks"
+      },
+      "exact_node_interpolation_bound": 0.07354376604641685,
+      "exact_node_relu_bound": 0.07418379784948904,
+      "exact_node_local_residual_bound": 0.1483675956989781,
+      "box_interpolant": {
+        "maximum": 0.0009820347986387173,
+        "rmse": 0.0001457199623446873
+      },
+      "box_relu": {
+        "maximum": 0.0009817129063945246,
+        "rmse": 0.00014571959133527124
+      },
+      "relu_minus_interpolant": {
+        "maximum": 3.770383694146062e-07,
+        "rmse": 7.076541234775753e-08
+      },
+      "initial_interpolant": {
+        "maximum": 0.0008574557825605511,
+        "rmse": 0.00016824069136692172
+      },
+      "initial_relu": {
+        "maximum": 0.0008574523694860336,
+        "rmse": 0.0001682407425054405
+      },
+      "tube_interpolant": {
+        "maximum": 0.0008446988643867753,
+        "rmse": 0.00015607380973533497
+      },
+      "tube_relu": {
+        "maximum": 0.0008447148391882153,
+        "rmse": 0.00015607324670311766
+      },
+      "local_stopped_residual_interpolant": 0.0008071088931874831,
+      "local_stopped_residual_relu": 0.000807221847091727,
+      "nodal_perturbation": {
+        "eta": 0.01,
+        "observed_relu_change": 0.008843698451618212,
+        "proven_change_bound": 0.010029296875
+      },
+      "full_sum_equivalence_max": 9.020562075079397e-16,
+      "global_network_outside_support_max": 0.0,
+      "sampled_nodal_solver_error_max": 1.7708057242771247e-14,
+      "total_seconds": 0.8601870809998218,
+      "zero_factor_preservation_max": 0.0,
+      "full_sum_equivalence_n": 24
+    },
+    "0.01": {
+      "h0": 0.01,
+      "actual_mesh": [
+        0.010000000000000002,
+        0.009999999999999998,
+        0.009999999999999993,
+        0.01
+      ],
+      "nseg": [
+        12,
+        7,
+        30,
+        25
+      ],
+      "n_nodes": 83824,
+      "n_cells": 63000,
+      "coefficient_sha256": "90fdd3fc20bed0c9b09838392530aa912dafec369b0e23ef155cc1c8ae213507",
+      "nodal_coefficient_bytes": 670592,
+      "build": {
+        "source": "new complete-grid numerical TTC coefficients",
+        "seconds": 1.266562585000429,
+        "observed_impact_velocity_min": -1.3259731872515772,
+        "observed_impact_velocity_max": -0.7996867535032267
+      },
+      "realization": {
+        "square_layers": 7,
+        "square_error_bound": 1.52587890625e-05,
+        "product_error_bound": 4.57763671875e-05,
+        "relu_units_per_multiplier": 46,
+        "relu_units_per_node": 150,
+        "literal_relu_units": 12573600,
+        "literal_hidden_depth": 29,
+        "gate_count_convention": "unshared ReLU DAG with affine skip connections",
+        "strictly_layered_relu_units_per_node": 216,
+        "strictly_layered_relu_units": 18105984,
+        "nodal_coefficients": 83824,
+        "coefficient_bound": 0.2184641887819747,
+        "realization_error_bound": 0.00016000795076804788,
+        "nodal_error_amplification": 1.000732421875,
+        "evaluation": "support-aware evaluation of explicit zero-preserving ReLU blocks"
+      },
+      "exact_node_interpolation_bound": 0.03828441530908997,
+      "exact_node_relu_bound": 0.03844442325985802,
+      "exact_node_local_residual_bound": 0.07688884651971604,
+      "box_interpolant": {
+        "maximum": 2.895921624816028e-05,
+        "rmse": 1.0182288580611867e-05
+      },
+      "box_relu": {
+        "maximum": 2.8948058149146083e-05,
+        "rmse": 1.018231127509546e-05
+      },
+      "relu_minus_interpolant": {
+        "maximum": 5.0265869369625626e-08,
+        "rmse": 8.608181215268124e-09
+      },
+      "initial_interpolant": {
+        "maximum": 2.105487307481335e-05,
+        "rmse": 9.29147961074048e-06
+      },
+      "initial_relu": {
+        "maximum": 2.1057550837089156e-05,
+        "rmse": 9.291599278557806e-06
+      },
+      "tube_interpolant": {
+        "maximum": 2.0792329406105203e-05,
+        "rmse": 9.680834770738406e-06
+      },
+      "tube_relu": {
+        "maximum": 2.080750265189002e-05,
+        "rmse": 9.68084358401562e-06
+      },
+      "local_stopped_residual_interpolant": 3.0258226592791426e-05,
+      "local_stopped_residual_relu": 3.0258469333369065e-05,
+      "nodal_perturbation": {
+        "eta": 0.01,
+        "observed_relu_change": 0.008972513409700365,
+        "proven_change_bound": 0.01000732421875
+      },
+      "sampled_nodal_solver_error_max": 2.375877272697835e-14,
+      "total_seconds": 1.8516977250001219,
+      "zero_factor_preservation_max": 0.0
+    },
+    "0.005": {
+      "h0": 0.005,
+      "actual_mesh": [
+        0.005000000000000001,
+        0.004999999999999999,
+        0.004999999999999997,
+        0.005
+      ],
+      "nseg": [
+        24,
+        14,
+        60,
+        50
+      ],
+      "n_nodes": 1166625,
+      "n_cells": 1008000,
+      "coefficient_sha256": "f29c9fcea7faa16afa3ced496e0d33b2b54ab34f30da724132158a0330780371",
+      "nodal_coefficient_bytes": 9333000,
+      "build": {
+        "source": "new complete-grid numerical TTC coefficients",
+        "seconds": 17.89926940800069,
+        "observed_impact_velocity_min": -1.3259731872515772,
+        "observed_impact_velocity_max": -0.7996867535032267
+      },
+      "realization": {
+        "square_layers": 8,
+        "square_error_bound": 3.814697265625e-06,
+        "product_error_bound": 1.1444091796875e-05,
+        "relu_units_per_multiplier": 52,
+        "relu_units_per_node": 168,
+        "literal_relu_units": 195993000,
+        "literal_hidden_depth": 32,
+        "gate_count_convention": "unshared ReLU DAG with affine skip connections",
+        "strictly_layered_relu_units_per_node": 243,
+        "strictly_layered_relu_units": 283489875,
+        "nodal_coefficients": 1166625,
+        "coefficient_bound": 0.2184641887819747,
+        "realization_error_bound": 4.000198769201197e-05,
+        "nodal_error_amplification": 1.00018310546875,
+        "evaluation": "support-aware evaluation of explicit zero-preserving ReLU blocks"
+      },
+      "exact_node_interpolation_bound": 0.019142207654544986,
+      "exact_node_relu_bound": 0.019182209642237,
+      "exact_node_local_residual_bound": 0.038364419284474,
+      "box_interpolant": {
+        "maximum": 9.48609799346356e-06,
+        "rmse": 2.5641692457175763e-06
+      },
+      "box_relu": {
+        "maximum": 9.486155045076994e-06,
+        "rmse": 2.564168922398755e-06
+      },
+      "relu_minus_interpolant": {
+        "maximum": 5.979241476938846e-09,
+        "rmse": 1.0768349380799078e-09
+      },
+      "initial_interpolant": {
+        "maximum": 5.429577245183448e-06,
+        "rmse": 2.3133939705508557e-06
+      },
+      "initial_relu": {
+        "maximum": 5.429298878964484e-06,
+        "rmse": 2.3133915913871473e-06
+      },
+      "tube_interpolant": {
+        "maximum": 5.290813695338348e-06,
+        "rmse": 2.4243263001603915e-06
+      },
+      "tube_relu": {
+        "maximum": 5.289780586531512e-06,
+        "rmse": 2.4243288411289478e-06
+      },
+      "local_stopped_residual_interpolant": 7.495685395320084e-06,
+      "local_stopped_residual_relu": 7.4953117714104955e-06,
+      "nodal_perturbation": {
+        "eta": 0.01,
+        "observed_relu_change": 0.009157154705281778,
+        "proven_change_bound": 0.0100018310546875
+      },
+      "sampled_nodal_solver_error_max": 1.9872992140790302e-14,
+      "total_seconds": 18.519327329999214,
+      "zero_factor_preservation_max": 0.0
+    }
+  },
+  "semigroup_check_max": 1.0685896612017132e-15,
+  "query_sha256": {
+    "box": "805dc08ff6c66219ec71228786ff4ee6fbd5896a5bd21a7e56edc71e320c838f",
+    "initial": "648bb8e61acd9a4471e9c72020f5c55d94d4096607aee4aa2ef0bb68cc459a43",
+    "tube": "27e72f91cc39918f3dfa05068c670e4b45ea50b6d76fc3427d45d41458b9f45b"
+  },
+  "unchanged_learned_models": {
+    "mse": {
+      "box": {
+        "maximum": 0.003475318290123819,
+        "rmse": 0.001130100259283397
+      },
+      "initial": {
+        "maximum": 0.0027474227559816655,
+        "rmse": 0.0009126794688543542
+      },
+      "tube": {
+        "maximum": 0.0029459206713629005,
+        "rmse": 0.0010209313815521736
+      },
+      "local_stopped_residual": 0.004044998884201054,
+      "relu_units": 1200,
+      "parameters": 323201,
+      "checkpoint_sha256": "06d22f6635936ce3e1bdd0dbc9eb041af11c98bf165552893c6e0ef96b9ec933",
+      "training_status": "unchanged supplied checkpoint; no retraining or local fitting"
+    },
+    "res": {
+      "box": {
+        "maximum": 0.003624739472800287,
+        "rmse": 0.0012548235218048612
+      },
+      "initial": {
+        "maximum": 0.00393053064456847,
+        "rmse": 0.0012397374452770356
+      },
+      "tube": {
+        "maximum": 0.0038783340266427546,
+        "rmse": 0.0011915839481384635
+      },
+      "local_stopped_residual": 0.005375866293907169,
+      "relu_units": 1200,
+      "parameters": 323201,
+      "checkpoint_sha256": "b47d4022f2af9cfe5fe2f9126e9184e5f015a8d8190c6b2f4785b768afcf7e11",
+      "training_status": "unchanged supplied checkpoint; no retraining or local fitting"
+    }
+  },
+  "reference_checks": {
+    "n": 116,
+    "rk4_vs_dop853_max": 2.425837308805967e-14,
+    "rk4_refinement_max": 2.248201624865942e-14,
+    "refined_vs_dop853_max": 1.7763568394002505e-15,
+    "is_uniform_validated_bound": false
+  }
+}
