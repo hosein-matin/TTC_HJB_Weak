@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or its numerical artifacts, please cite the accompanying manuscript."
+type: software
+title: "Companion code for A Derivative-Free Bellman Equation for Dynamic Time-to-Collision"
+version: "1.0.0"
+authors:
+  - family-names: "Zinat Matin"
+    given-names: "Hossein Nick"
+  - family-names: "Yeo"
+    given-names: "Yuneil"
+preferred-citation:
+  type: unpublished
+  title: "A Derivative-Free Bellman Equation for Dynamic Time-to-Collision: Two-Sided Certificates and Explicit ReLU Approximation"
+  authors:
+    - family-names: "Zinat Matin"
+      given-names: "Hossein Nick"
+    - family-names: "Yeo"
+      given-names: "Yuneil"
+  year: 2026
+  notes: "Author preprint."
